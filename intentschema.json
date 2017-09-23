@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "GetArrivals",
+      "slots": [
+        {
+          "name": "Station",
+          "type": "List_of_Stations"
+        }
+      ]
+    },
+
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
