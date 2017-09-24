@@ -1,0 +1,6 @@
+GetArrivals what's the next train from {Station}
+GetArrivals what time is the next train from {Station}
+GetArrivals when's the next train from {Station}
+GetArrivals {Station} arrivals
+GetArrivals {Station} departures
+GetArrivals {Station} services
