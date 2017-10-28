@@ -1,9 +1,10 @@
 import urllib2
 import json
+import os
 
 def lambda_handler(event, context):
     if (event['session']['application']['applicationId'] !=
-            "amzn1.echo-sdk-ams.app.XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"):
+            os.environ['ALEXA_APPLICATION_ID']):
         raise ValueError("Invalid Application ID")
 
     if event['session']['new']:
@@ -98,4 +99,3 @@ def build_response(session_attributes, speechlet_response):
         'sessionAttributes': session_attributes,
         'response': speechlet_response
     }
-    
